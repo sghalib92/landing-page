@@ -5,7 +5,6 @@
 }
 
 body {
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
@@ -28,55 +27,61 @@ button {
   border-radius: 5px;
 }
 
-/*Hero section CSS rules*/
+/* Hero section CSS rules*/
 
 .hero {
+  background-color: #1F2937;
   display: flex;
   flex-direction: column;
-  background-color: #1F2937;
 }
 
 .hero-header {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  margin-bottom: 40px;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px 12%;
+  gap: 10px;
 }
 
-.hero-header h1{
+.hero-header h1 {
   font-size: 24px;
   color: #F9FAF8;
 }
 
 ul {
   display: flex;
-  justify-content: space-between;
+  gap: 30px;
 }
 
 .hero-content {
   display: flex;
-  align-items: center;
-  justify-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: space-around;
+  margin-bottom: 30px;
+  padding: 20px 12%;
+  gap: 20px;
 }
 
 .hero-text {
-  display: flex;
-  flex-direction: column;
   font-size: 48px;
   color: #F9FAF8;
   font-weight: 800;
-  gap: 10px;
-}
+  width: 1000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 5px;
+ }
 
-.hero-text p, a, .action-section p {
+.hero-text p, a{
   font-size: 18px;
   color: #E5E7EB;
 }
 
 .hero-content-image {
-  height: auto;
-  width: 350px;
-  border-radius: 5px;
+ width: 325px;
 }
 
 /* Info section CSS rules */
@@ -87,18 +92,10 @@ ul {
   justify-content: center;
   align-items: center;
   gap: 25px;
+  padding: 0 15%;
 }
 
-.items {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: baseline;
-  gap: 120px;
-  margin-bottom: 40px;
-}
-
-.info-title {
+.info-header {
   text-align: center;
   font-size: 36px;
   font-weight: 800;
@@ -107,19 +104,27 @@ ul {
   margin-top: 40px;
 }
 
-.text {
-  width: 220px;
+.items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 120px;
+  margin-bottom: 40px;
 }
 
- .info-image {
-  height: auto;
-  width: 200px;
+.text {
+   width: 200px;
+}
+
+.info-image {
+   height: auto;
+   width: 200px;
 } 
 
 /* Quote section CSS rules */
 
 .quote-section {
-  padding: 30px 25%;
+  padding: 30px 20%;
   background-color: #E5E7EB;
   display: flex;
   flex-direction: column;
@@ -141,59 +146,45 @@ ul {
   align-self: flex-end;
 }
 
-/* CSS rules for all sections: hero, info-container, quote-section */
-
-
-h1, ul {
-  margin: 10px auto;
-}
-
-h1 {
-  width: 700px;
-}
-
-ul {
-  flex-wrap: wrap;
-  width: 350px;
-}
-.hero-content {
-  margin-bottom: 30px;
-}
-.hero-text {
-  width: 700px;
-  margin: 0 auto;
-}
-
-.hero-content-image {
-  margin: 0 auto;
-}
-
-/* action-section CSS rules */
+/* Action-section CSS rules */
 
 .action-section {
-background-color:#3882F6;
-display: flex;
-justify-content: center;
-align-items: center;
-gap: 10%;
-margin: 40px auto;
-padding: 20px;
-border-radius: 10px;
+  background-color:#3882F6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+  margin: 40px auto;
+  padding: 20px 24px;
+  border-radius: 10px;
 }
 
 .action-text {
-border-radius: 10px;
-color: #F9FAF8;
-font-size: 24px;
-font-weight: 800;
+  color: #F9FAF8;
+  font-size: 24px;
+  font-weight: 800;
 }
 
 .action-section p {
-font-weight: 300;
-font-size: 18px;
-color: #E5E7EB
+  font-weight: 300;
+  font-size: 18px;
+  color: #E5E7EB;
+  margin-top: 10px;
 }
 
 .action-section button {
 border: 2px solid white;
 }
+
+/* Footer section CSS rules */
+ 
+.footer {
+  height: 50px;
+  background-color: #1F2937;
+  font-weight: 300;
+  font-size: 18px;
+  color: #E5E7EB;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
