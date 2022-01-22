@@ -5,7 +5,7 @@
 }
 
 body {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
@@ -20,6 +20,7 @@ a {
 
 button {
   width: 100px;
+  height: 40px;
   background-color: #3882F6;
   color: #F9FAF8;
   border: none;
@@ -32,32 +33,30 @@ button {
 .hero {
   display: flex;
   flex-direction: column;
-  padding: 40px 200px;
   background-color: #1F2937;
 }
 
 .hero-header {
-  min-width: 300px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   margin-bottom: 40px;
 }
 
-.hero-header h1{
+.hero-header h1, .action-section div{
   font-size: 24px;
   color: #F9FAF8;
 }
 
 ul {
   display: flex;
-  gap: 35px;
+  justify-content: space-between;
 }
 
 .hero-content {
   display: flex;
-  align-items: start;
-  gap: 35px;
+  align-items: center;
+  justify-items: center;
 }
 
 .hero-text {
@@ -69,7 +68,7 @@ ul {
   gap: 10px;
 }
 
-.hero-text p, a {
+.hero-text p, a, .action-section p {
   font-size: 18px;
   color: #E5E7EB;
 }
@@ -83,38 +82,89 @@ ul {
 /* Info section CSS rules */
 
 .info-container {
-  padding: 40px 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.items {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: center;
+  align-items: baseline;
+  gap: 120px;
+  margin-bottom: 40px;
 }
 
 .info-title {
   text-align: center;
-  margin-top: 40px;
   font-size: 36px;
   font-weight: 800;
   color: #1F2937;
+  margin-bottom: 25px;
+  margin-top: 40px;
 }
 
 .text {
-  width: 250px;
+  width: 220px;
 }
 
-.info-image {
+ .info-image {
   height: auto;
-  width: 250px;
+  width: 200px;
+} 
+
+/* Quote section CSS rules */
+
+.quote-section {
+  padding: 30px 15%;
+  background-color: #E5E7EB;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 10px;
 }
 
+.quote-section div {
+
+  color: #1F2937;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 36px;
+}
+
+.author {
+  font-weight: 800;
+  font-size: 18px;
+  align-self: flex-end;
+}
+
+/* CSS rules for all sections: hero, info-container, quote-section */
 
 
+h1, ul {
+  margin: 10px auto;
+}
 
+h1 {
+  width: 700px;
+}
 
+ul {
+  flex-wrap: wrap;
+  width: 350px;
+}
+.hero-content {
+  margin-bottom: 30px;
+}
+.hero-text {
+  width: 700px;
+  margin: 0 auto;
+}
 
-
-
-
-
-
+.hero-content-image {
+  margin: 0 auto;
+}
 
